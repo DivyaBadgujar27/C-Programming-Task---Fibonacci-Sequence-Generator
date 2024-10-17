@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num, i = 0, j = 1, sum, count;
+
+    // Input: number of terms to generate
+    printf("Enter the Number of Terms = ");
+    scanf("%d", &num);
+
+    printf("Fibonacci Sequence");
+
+    for (count = 1; count <= num; count++) {
+        printf("%d ", i);  // Print the current term
+        sum = i + j;       // Calculate the next term
+        i = j;             // Move the previous term to i
+        j = sum;           // Update j to the new term
+    }
+    printf("\n");
+
+    return 0;
+}
